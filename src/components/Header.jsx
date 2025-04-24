@@ -35,6 +35,19 @@ const StyledH1 = styled.h1`
   height: 100%;
 `
 
+const StyledName = styled.h2`
+  font-family: 'DotGothic16', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 100%;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+`
+
 const StyledNav = styled.nav`
   transform: rotate(-90deg);
 `
@@ -60,14 +73,22 @@ const StyledUl = styled.ul`
 function Header() {
   const [title, setTitle] = useState('')
   const fullTitle = 'full-stack. web (developer)'
+  const [name, setName] = useState('')
+  const fullName = 'Gabriel Azevedo'
 
   useEffect(() => {
-    let index = 0
+    let indexTitle = 0
+    let indexName = 0
+
     const interval = setInterval(() => {
-      if (index < fullTitle.length) {
-        let title = fullTitle.slice(0, index + 1)
+      if (indexTitle < fullTitle.length) {
+        let title = fullTitle.slice(0, indexTitle + 1)
         setTitle(title)
-        index++
+        indexTitle++
+      } else if (indexName < fullName.length) {
+        let name = fullName.slice(0, indexName + 1)
+        setName(name)
+        indexName++
       } else {
         clearInterval(interval)
       }
@@ -103,6 +124,7 @@ function Header() {
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <StyledH1>{title}</StyledH1>
+          <StyledName>{name}</StyledName>
         </div>
       </StyledDiv>
     </StyledHeader>
