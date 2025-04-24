@@ -1,7 +1,15 @@
-function App() {
+import Header from './components/Header'
+import styled from 'styled-components'
 
+const StyledApp = styled.div`
+  margin: 0 7.2rem 0;
+`
+
+function App() {
   return (
-    <h1 className='text-3xl font-bold underline'>Hello World!</h1>
+    <StyledApp>
+      <Header />
+    </StyledApp>
   )
 }
 
