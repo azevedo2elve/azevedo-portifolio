@@ -1,4 +1,5 @@
-import Header from './components/Header'
+import Nav from './components/Nav'
+import HomeSection from './sections/HomeSection'
 import styled from 'styled-components'
 
 const StyledApp = styled.div`
@@ -8,7 +9,8 @@ const StyledApp = styled.div`
 function App() {
   return (
     <StyledApp>
-      <Header />
+      <Nav />
+      <HomeSection />
     </StyledApp>
   )
 }
