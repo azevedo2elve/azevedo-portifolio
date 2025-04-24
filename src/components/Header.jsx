@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
 
@@ -58,6 +58,23 @@ const StyledUl = styled.ul`
 `
 
 function Header() {
+  const [title, setTitle] = useState('')
+  const fullTitle = 'full-stack. web (developer)'
+
+  useEffect(() => {
+    let index = 0
+    const interval = setInterval(() => {
+      if (index < fullTitle.length) {
+        let title = fullTitle.slice(0, index + 1)
+        setTitle(title)
+        index++
+      } else {
+        clearInterval(interval)
+      }
+    }, 100)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <StyledHeader>
       <div className="w-full">
@@ -85,7 +102,7 @@ function Header() {
         </div>
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <StyledH1>full-stack. web (developer)</StyledH1>
+          <StyledH1>{title}</StyledH1>
         </div>
       </StyledDiv>
     </StyledHeader>
