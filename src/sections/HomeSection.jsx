@@ -68,7 +68,7 @@ function HomeSection() {
   }, [])
 
   return (
-    <StyledHeader>
+    <StyledHeader id="home">
       <div className="w-full">
         <StyledLogo>DNC</StyledLogo>
       </div>
