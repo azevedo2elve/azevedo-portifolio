@@ -4,8 +4,8 @@ import Styled from 'styled-components'
 const StyledSection = Styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  height: 100vh;
+  gap: 8rem;
+  height: auto;
   width: 100%;
   margin-bottom: 8rem;`
 
@@ -29,16 +29,6 @@ const StyledHr = Styled.hr`
   width: 9rem;
   background-color: #000;`
 
-const StyledDiv = Styled.div`
-display: grid;
-grid-template-columns: repeat(2, minmax(300px, 1fr));
-gap: 8rem;
-
-@media (max-width: 1170px) {
-  grid-template-columns: 1fr;
-}
-`
-
 function Section({ id, title, alignTitle, children }) {
   return (
     <StyledSection id={id}>
@@ -48,7 +38,7 @@ function Section({ id, title, alignTitle, children }) {
           <StyledHr />
         </StyledTitle>
       </StyledDivTitle>
-      <StyledDiv>{children}</StyledDiv>
+      {children}
     </StyledSection>
   )
 }

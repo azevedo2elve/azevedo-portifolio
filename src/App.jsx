@@ -1,6 +1,7 @@
 import Nav from './components/Nav'
 import HomeSection from './sections/HomeSection'
 import ProjectSection from './sections/ProjectSection'
+import AboutSection from './sections/AboutSection'
 
 // styles
 import styled from 'styled-components'
@@ -31,6 +32,7 @@ function App() {
       <HomeSection />
       <StyledMain>
         <ProjectSection />
+        <AboutSection />
       </StyledMain>
     </StyledApp>
   )
