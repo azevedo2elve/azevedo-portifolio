@@ -10,7 +10,7 @@ const StyledApp = styled.div`
   margin: 0 7.2rem;
 
   @media (max-width: 1050px) {
-    margin: 0 2rem;
+    margin: 0 6rem;
   }
 `
 const StyledMain = styled.main`
