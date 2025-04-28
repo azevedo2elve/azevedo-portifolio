@@ -1,13 +1,15 @@
 import React from 'react'
 import Section from '../components/Section'
 import styled from 'styled-components'
+import CardSkill from '../components/CardSkill'
+import CardOtherSkill from '../components/CardOtherSkill'
 
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 9rem;
   width: 100%;
 `
 const StyledDivAbout = styled.div`
@@ -16,7 +18,7 @@ const StyledDivAbout = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  width: 50%;
+  width: 80%;
 `
 
 const StyledName = styled.h2`
@@ -30,13 +32,98 @@ const StyledDescription = styled.div`
   flex-direction: column;
   text-align: justify;
   gap: 1.5rem;
-  font-family: 'Manrope', sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.6;
 `
 
+const StyledDivLink = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`
+
 function AboutSection() {
+  const skills = [
+    {
+      icon: 'icons/php_laravel.svg',
+      title: 'PHP & Laravel',
+      text: 'Desenvolvimento de aplicações web eficientes para resolver problemas e criar soluções inovadoras.',
+    },
+    {
+      icon: 'icons/typescript_react.svg',
+      title: 'TypeScript & ReactJS',
+      text: 'Criação de interfaces modernas e escaláveis com foco em performance e manutenção.',
+    },
+    {
+      icon: 'icons/figma.svg',
+      title: 'Figma',
+      text: 'Prototipação e design de interfaces intuitivas, otimizando a experiência do usuário.',
+    },
+    {
+      icon: 'icons/postgresql.svg',
+      title: 'PostgreSQL',
+      text: 'Gerenciamento robusto de dados relacionais com foco em segurança e alta disponibilidade.',
+    },
+    {
+      icon: 'icons/linux.svg',
+      title: 'Linux',
+      text: 'Administração de ambientes de servidores e otimização de sistemas baseados em Linux.',
+    },
+    {
+      icon: 'icons/docker.svg',
+      title: 'Docker',
+      text: 'Containerização de aplicações para ambientes de desenvolvimento e produção eficientes.',
+    },
+  ]
+
+  const experiences = [
+    {
+      title: 'Tenho experiência com',
+      items: [
+        'Python',
+        'PostgreSQL',
+        'Servidores Linux',
+        'Nginx',
+        'Zabbix',
+        'SCRUM',
+        'API REST',
+      ],
+    },
+    {
+      title: 'Maior tempo de experiência com',
+      items: [
+        'HTML',
+        'CSS',
+        'TailwindCSS',
+        'JavaScript',
+        'PHP',
+        'Laravel',
+        'Livewire',
+      ],
+    },
+    {
+      title: 'Estou aprimorando',
+      items: [
+        'React',
+        'TypeScript',
+        'Java',
+        'SpringBoot',
+        'NodeJS',
+        'CI/CD com AWS',
+        'NestJS',
+      ],
+    },
+  ]
+
   return (
     <Section id="about" title="Sobre Mim" alignTitle="flex-start">
       <StyledDiv>
@@ -66,8 +153,33 @@ function AboutSection() {
               soluções criativas, resolver problemas reais e contribuir com
               projetos de impacto.
             </p>
+            <StyledDivLink>
+              <a
+                href="https://www.linkedin.com/in/azevedo2elve/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://www.github.com/azevedo2elve"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="mailto:azevedogabriel00@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Email
+              </a>
+            </StyledDivLink>
           </StyledDescription>
         </StyledDivAbout>
+        <CardSkill skills={skills} />
+        <CardOtherSkill experiences={experiences} />
       </StyledDiv>
     </Section>
   )

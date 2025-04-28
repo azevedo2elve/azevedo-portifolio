@@ -31,19 +31,13 @@ function ProjectSection() {
         />
         <CardProject
           image="https://placehold.co/150"
-          tags={['TypeScript', 'Laravel', 'React', 'Node', 'Express']}
+          tags={['Laravel', 'React']}
           title="Outro Projeto Incrível"
           description="Este é um projeto incrível que utiliza tecnologias modernas para criar uma experiência incrível para os usuários."
         />
         <CardProject
           image="https://placehold.co/150"
           tags={['VueJS', 'Laravel']}
-          title="Outro Projeto Incrível"
-          description="Este é um projeto incrível que utiliza tecnologias modernas para criar uma experiência incrível para os usuários."
-        />
-        <CardProject
-          image="https://placehold.co/150"
-          tags={['Laravel', 'React']}
           title="Outro Projeto Incrível"
           description="Este é um projeto incrível que utiliza tecnologias modernas para criar uma experiência incrível para os usuários."
         />
