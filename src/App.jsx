@@ -1,6 +1,7 @@
 import Nav from './components/Nav'
 import HomeSection from './sections/HomeSection'
 import ProjectSection from './sections/ProjectSection'
+import AboutSection from './sections/AboutSection'
 
 // styles
 import styled from 'styled-components'
@@ -9,7 +10,7 @@ const StyledApp = styled.div`
   margin: 0 7.2rem;
 
   @media (max-width: 1050px) {
-    margin: 0 2rem;
+    margin: 0 4rem;
   }
 `
 const StyledMain = styled.main`
@@ -31,6 +32,7 @@ function App() {
       <HomeSection />
       <StyledMain>
         <ProjectSection />
+        <AboutSection />
       </StyledMain>
     </StyledApp>
   )
