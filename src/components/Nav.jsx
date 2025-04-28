@@ -6,7 +6,10 @@ const StyledNav = styled.nav`
   display: block;
   position: fixed;
   top: 50%;
-  left: 0;
+  left: 0%;
+  @media (max-width: 1050px) {
+    left: -5%;
+  }
 `
 
 const StyledUl = styled.ul`
