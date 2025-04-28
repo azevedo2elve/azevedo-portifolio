@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 const StyledHeader = styled.header`
-  font-family: 'Manrope', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
