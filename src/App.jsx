@@ -2,6 +2,7 @@ import Nav from './components/Nav'
 import HomeSection from './sections/HomeSection'
 import ProjectSection from './sections/ProjectSection'
 import AboutSection from './sections/AboutSection'
+import ContactSection from './sections/ContactSection'
 
 // styles
 import styled from 'styled-components'
@@ -33,6 +34,7 @@ function App() {
       <StyledMain>
         <ProjectSection />
         <AboutSection />
+        <ContactSection />
       </StyledMain>
     </StyledApp>
   )
