@@ -74,7 +74,7 @@ function HomeSection() {
     <StyledHeader id="home">
       <div className="w-full">
         <StyledLogo>
-          <img src="logo_gabriel_azevedo_redondo.png" alt="Logo" />
+          <img src="logo/logo_gabriel_azevedo_redondo.png" alt="Logo" />
         </StyledLogo>
       </div>
 

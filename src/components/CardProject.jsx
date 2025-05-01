@@ -46,7 +46,8 @@ const TagsContainer = styled.div`
 const Tag = styled.span`
   background-color: #f0f0f0;
   color: #333;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
   padding: 5px 10px;
   border-radius: 4px;
 `
