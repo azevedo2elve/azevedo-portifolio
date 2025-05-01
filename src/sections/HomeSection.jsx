@@ -2,18 +2,21 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 const StyledHeader = styled.header`
-  font-family: 'Manrope', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   height: 100vh;
 `
 
-const StyledLogo = styled.h2`
-  font-weight: 800;
-  font-size: 3.6rem;
-  line-height: 100%;
+const StyledLogo = styled.div`
+  display: flex;
+  justify-content: center;
+  height: 30rem;
   margin: 2rem 2rem;
+
+  img {
+    height: 100%;
+  }
 `
 
 const StyledH1 = styled.h1`
@@ -70,7 +73,9 @@ function HomeSection() {
   return (
     <StyledHeader id="home">
       <div className="w-full">
-        <StyledLogo>DNC</StyledLogo>
+        <StyledLogo>
+          <img src="logo_gabriel_azevedo_redondo.png" alt="Logo" />
+        </StyledLogo>
       </div>
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

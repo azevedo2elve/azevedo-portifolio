@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const CardContainer = styled.div`
+const CardContainer = styled.a`
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -71,9 +71,9 @@ const ProjectDescription = styled.p`
   margin: 0;
 `
 
-function CardProject({ image, tags, title, description }) {
+function CardProject({ image, tags, title, description, link }) {
   return (
-    <CardContainer>
+    <CardContainer href={link} target="_blank">
       <LeftSection>
         <ImageContainer>
           <ProjectImage src={image} alt={title} />
