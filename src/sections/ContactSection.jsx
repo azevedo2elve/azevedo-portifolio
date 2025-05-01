@@ -27,7 +27,7 @@ function ContactSection() {
             <StyledImg src="icons/gmail.svg" alt="gmail" />
           </a>
           <a
-            href="https://wa.me/51995141997?text=Olá!%20Vim%20através%20do%20seu%20site%2C%20gostaria%20de%20tirar%20uma%20dúvida..."
+            href="https://wa.me/5551995141997?text=Olá!%20Vim%20através%20do%20seu%20site%2C%20gostaria%20de%20tirar%20uma%20dúvida..."
             target="_blank"
           >
             <StyledImg src="icons/whatsapp.svg" alt="whatsapp" />
