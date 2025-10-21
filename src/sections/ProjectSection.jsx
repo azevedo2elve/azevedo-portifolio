@@ -18,6 +18,13 @@ function ProjectSection() {
     <Section id="projects" title="Projetos" alignTitle="flex-end">
       <StyledDiv>
         <CardProject
+          image="images/conf-legacy.png"
+          tags={['React', 'Vite', 'Styled Components']}
+          title="LADING PAGE CONFERÊNCIA LEGACY"
+          link="https://github.com/azevedo2elve/legacy-conf25"
+          description="Esse foi um projeto desenvolvido para a criação de uma landing page para a conferência Legacy Conf 2025. Utilizei React com Vite para garantir uma performance otimizada e Styled Components para estilização modular e reutilizável."
+        />
+        <CardProject
           image="images/sas-ait.png"
           tags={['PHP', 'Laravel', 'Docker', 'SQL']}
           title="SAS AIT"
